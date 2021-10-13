@@ -1,0 +1,20 @@
+data: 11.10.2021 r.
+
+
+Oryginalny zestaw danych tb.csv jest dostępny w folderze /OriginalData.
+
+Informacje na temat danych (definicje zmiennych itp.):
+* iso2 - string, informacja na temat kraju, gdzie badanie zostało przeprowadzone
+* year - int, informacja o roku, w którym przeprowadzono badanie
+* new_sp - int, określa łączną sumę zachorowań na gruźlicę w podanym roku w danym kraju 
+* new_sp_(f/m)(age range) - int, określa dokładną wartość zachorowań na gruźlicę 
+				w danym kraju i roku, osób o danej płci, 
+				w określonym przedziale wiekowym
+
+Pamiętaj, że wszystkie zmiany przeprowadzone na oryginalnym zestawie danych tb.csv są 
+dokładnie opisane w pliku readme.md, znajdującym się w folderze /Documents. 
+Dodatkowo, uporządkowany zestaw danych znajdziesz w folderze /AnalysisData, natomiast
+odpowiedni kod, z którego został wygenerowany ten zestaw jest zlokalizowany w folderze 
+/CommandFiles.
+
+
