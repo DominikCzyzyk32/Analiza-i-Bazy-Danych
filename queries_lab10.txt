@@ -1,0 +1,30 @@
+-- CREATE EXTENSION postgis;
+
+-- select postgis_full_version();
+
+-- 1
+select count(*) 
+from nyc_streets;
+
+-- 2
+select count(*)
+from nyc_streets
+where name like 'B%' or name like 'Q%' or name like 'M%';
+
+-- 3
+select sum(popn_total)
+from nyc_census_blocks;
+
+-- 4
+select n.boroname, sum(c.popn_total) as population
+from nyc_census_blocks as c
+inner join nyc_neighborhoods as n
+using(gid)
+where n.boroname in ('The Bronx','Manhattan','Queens')
+group by n.boroname;
+
+-- 5
+select boroname, count(name)
+from nyc_neighborhoods
+group by boroname;
+
